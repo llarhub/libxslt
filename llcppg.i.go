@@ -3,4 +3,4 @@
 package libxslt
 
 const XGoPackage = "github.com/llarhub/libxml2"
-const LLGoPackage = "link: $(pkg-config --libs libxslt);"
+const LLGoPackage = "link: $(pkg-config --libs libxslt);-lxslt -lxml2"
