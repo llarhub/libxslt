@@ -70,8 +70,8 @@ func (self StylesheetPtr) CNsProp(node libxml2.NodePtr, name *libxml2.Char, name
 //go:linkname GetUTF8Char C.xsltGetUTF8Char
 func GetUTF8Char(utf *uint8, len *c.Int) c.Int
 
-// llgo:link DebugTraceCodes.DebugSetDefaultTrace C.xsltDebugSetDefaultTrace
-func (self DebugTraceCodes) DebugSetDefaultTrace() {
+// llgo:link DebugTraceCodes.SetDefaultTrace C.xsltDebugSetDefaultTrace
+func (self DebugTraceCodes) SetDefaultTrace() {
 }
 
 //go:linkname DebugGetDefaultTrace C.xsltDebugGetDefaultTrace
@@ -79,17 +79,17 @@ func DebugGetDefaultTrace() DebugTraceCodes
 
 // XSLT specific error and debug reporting functions.
 //
-//go:linkname XsltGenericError C.xsltGenericError
-var XsltGenericError libxml2.GenericErrorFunc
+//go:linkname GenericError C.xsltGenericError
+var GenericError libxml2.GenericErrorFunc
 
-//go:linkname XsltGenericErrorContext C.xsltGenericErrorContext
-var XsltGenericErrorContext unsafe.Pointer
+//go:linkname GenericErrorContext C.xsltGenericErrorContext
+var GenericErrorContext unsafe.Pointer
 
-//go:linkname XsltGenericDebug C.xsltGenericDebug
-var XsltGenericDebug libxml2.GenericErrorFunc
+//go:linkname GenericDebug C.xsltGenericDebug
+var GenericDebug libxml2.GenericErrorFunc
 
-//go:linkname XsltGenericDebugContext C.xsltGenericDebugContext
-var XsltGenericDebugContext unsafe.Pointer
+//go:linkname GenericDebugContext C.xsltGenericDebugContext
+var GenericDebugContext unsafe.Pointer
 
 // llgo:link TransformContextPtr.PrintErrorContext C.xsltPrintErrorContext
 func (self TransformContextPtr) PrintErrorContext(style StylesheetPtr, node libxml2.NodePtr) {
@@ -204,8 +204,8 @@ func Timestamp() c.Long
 //go:linkname CalibrateAdjust C.xsltCalibrateAdjust
 func CalibrateAdjust(delta c.Long)
 
-//go:linkname XslDebugStatus C.xslDebugStatus
-var XslDebugStatus c.Int
+//go:linkname DebugStatus C.xslDebugStatus
+var DebugStatus c.Int
 
 //go:linkname GetDebuggerStatus C.xsltGetDebuggerStatus
 func GetDebuggerStatus() c.Int

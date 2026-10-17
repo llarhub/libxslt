@@ -26,36 +26,36 @@ const DEFAULT_URL = "http://xmlsoft.org/XSLT/"
 //
 // This value is used to detect templates loops.
 //
-//go:linkname XsltMaxDepth C.xsltMaxDepth
-var XsltMaxDepth c.Int
+//go:linkname MaxDepth C.xsltMaxDepth
+var MaxDepth c.Int
 
 //  * xsltMaxVars:
 //   *
 //    * This value is used to detect templates loops.
 //
-//go:linkname XsltMaxVars C.xsltMaxVars
-var XsltMaxVars c.Int
+//go:linkname MaxVars C.xsltMaxVars
+var MaxVars c.Int
 
 // xsltEngineVersion:
 //
 // The version string for libxslt.
 //
-//go:linkname XsltEngineVersion C.xsltEngineVersion
-var XsltEngineVersion *c.Char
+//go:linkname EngineVersion C.xsltEngineVersion
+var EngineVersion *c.Char
 
 // xsltLibxsltVersion:
 //
 // The version of libxslt compiled.
 //
-//go:linkname XsltLibxsltVersion C.xsltLibxsltVersion
-var XsltLibxsltVersion c.Int
+//go:linkname LibxsltVersion C.xsltLibxsltVersion
+var LibxsltVersion c.Int
 
 // xsltLibxmlVersion:
 //
 // The version of libxml libxslt was compiled against.
 //
-//go:linkname XsltLibxmlVersion C.xsltLibxmlVersion
-var XsltLibxmlVersion c.Int
+//go:linkname LibxmlVersion C.xsltLibxmlVersion
+var LibxmlVersion c.Int
 
 //go:linkname Init C.xsltInit
 func Init()

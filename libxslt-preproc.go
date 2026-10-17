@@ -9,8 +9,8 @@ import (
 
 // Interfaces
 //
-//go:linkname XsltExtMarker C.xsltExtMarker
-var XsltExtMarker *libxml2.Char
+//go:linkname ExtMarker C.xsltExtMarker
+var ExtMarker *libxml2.Char
 
 // llgo:link StylesheetPtr.DocumentComp C.xsltDocumentComp
 func (self StylesheetPtr) DocumentComp(inst libxml2.NodePtr, function TransformFunction) ElemPreCompPtr {

@@ -77,5 +77,5 @@ func SetLoaderFunc(f DocLoaderFunc)
 
 // the loader may be needed by extension libraries so it is exported
 //
-//go:linkname XsltDocDefaultLoader C.xsltDocDefaultLoader
-var XsltDocDefaultLoader DocLoaderFunc
+//go:linkname DocDefaultLoader C.xsltDocDefaultLoader
+var DocDefaultLoader DocLoaderFunc

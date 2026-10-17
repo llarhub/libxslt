@@ -23,8 +23,8 @@ func (self StylesheetPtr) NewTransformContext(doc libxml2.DocPtr) TransformConte
 	return nil
 }
 
-// llgo:link TransformContextPtr.FreeTransformContext C.xsltFreeTransformContext
-func (self TransformContextPtr) FreeTransformContext() {
+// llgo:link TransformContextPtr.Free C.xsltFreeTransformContext
+func (self TransformContextPtr) Free() {
 }
 
 // llgo:link StylesheetPtr.ApplyStylesheetUser C.xsltApplyStylesheetUser
