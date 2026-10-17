@@ -14,10 +14,10 @@ import (
 type LoadType c.Uint
 
 const (
-	XSLT_LOAD_START      LoadType = 0
-	XSLT_LOAD_STYLESHEET LoadType = 1
+	LOAD_START      LoadType = 0
+	LOAD_STYLESHEET LoadType = 1
 	// loading document at transformation time
-	XSLT_LOAD_DOCUMENT LoadType = 2
+	LOAD_DOCUMENT LoadType = 2
 )
 
 // xsltDocLoaderFunc:

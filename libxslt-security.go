@@ -14,11 +14,11 @@ import (
 type SecurityOption c.Uint
 
 const (
-	XSLT_SECPREF_READ_FILE        SecurityOption = 1
-	XSLT_SECPREF_WRITE_FILE       SecurityOption = 2
-	XSLT_SECPREF_CREATE_DIRECTORY SecurityOption = 3
-	XSLT_SECPREF_READ_NETWORK     SecurityOption = 4
-	XSLT_SECPREF_WRITE_NETWORK    SecurityOption = 5
+	SECPREF_READ_FILE        SecurityOption = 1
+	SECPREF_WRITE_FILE       SecurityOption = 2
+	SECPREF_CREATE_DIRECTORY SecurityOption = 3
+	SECPREF_READ_NETWORK     SecurityOption = 4
+	SECPREF_WRITE_NETWORK    SecurityOption = 5
 )
 
 type X_SecurityPrefs struct {

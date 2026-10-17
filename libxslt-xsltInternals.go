@@ -90,28 +90,28 @@ type X_KeyTable struct {
 type StyleType c.Uint
 
 const (
-	XSLT_FUNC_COPY           StyleType = 1
-	XSLT_FUNC_SORT           StyleType = 2
-	XSLT_FUNC_TEXT           StyleType = 3
-	XSLT_FUNC_ELEMENT        StyleType = 4
-	XSLT_FUNC_ATTRIBUTE      StyleType = 5
-	XSLT_FUNC_COMMENT        StyleType = 6
-	XSLT_FUNC_PI             StyleType = 7
-	XSLT_FUNC_COPYOF         StyleType = 8
-	XSLT_FUNC_VALUEOF        StyleType = 9
-	XSLT_FUNC_NUMBER         StyleType = 10
-	XSLT_FUNC_APPLYIMPORTS   StyleType = 11
-	XSLT_FUNC_CALLTEMPLATE   StyleType = 12
-	XSLT_FUNC_APPLYTEMPLATES StyleType = 13
-	XSLT_FUNC_CHOOSE         StyleType = 14
-	XSLT_FUNC_IF             StyleType = 15
-	XSLT_FUNC_FOREACH        StyleType = 16
-	XSLT_FUNC_DOCUMENT       StyleType = 17
-	XSLT_FUNC_WITHPARAM      StyleType = 18
-	XSLT_FUNC_PARAM          StyleType = 19
-	XSLT_FUNC_VARIABLE       StyleType = 20
-	XSLT_FUNC_WHEN           StyleType = 21
-	XSLT_FUNC_EXTENSION      StyleType = 22
+	FUNC_COPY           StyleType = 1
+	FUNC_SORT           StyleType = 2
+	FUNC_TEXT           StyleType = 3
+	FUNC_ELEMENT        StyleType = 4
+	FUNC_ATTRIBUTE      StyleType = 5
+	FUNC_COMMENT        StyleType = 6
+	FUNC_PI             StyleType = 7
+	FUNC_COPYOF         StyleType = 8
+	FUNC_VALUEOF        StyleType = 9
+	FUNC_NUMBER         StyleType = 10
+	FUNC_APPLYIMPORTS   StyleType = 11
+	FUNC_CALLTEMPLATE   StyleType = 12
+	FUNC_APPLYTEMPLATES StyleType = 13
+	FUNC_CHOOSE         StyleType = 14
+	FUNC_IF             StyleType = 15
+	FUNC_FOREACH        StyleType = 16
+	FUNC_DOCUMENT       StyleType = 17
+	FUNC_WITHPARAM      StyleType = 18
+	FUNC_PARAM          StyleType = 19
+	FUNC_VARIABLE       StyleType = 20
+	FUNC_WHEN           StyleType = 21
+	FUNC_EXTENSION      StyleType = 22
 )
 
 // xsltElemPreComp:
@@ -256,17 +256,17 @@ type X_TransformCache struct {
 type OutputType c.Uint
 
 const (
-	XSLT_OUTPUT_XML  OutputType = 0
-	XSLT_OUTPUT_HTML OutputType = 1
-	XSLT_OUTPUT_TEXT OutputType = 2
+	OUTPUT_XML  OutputType = 0
+	OUTPUT_HTML OutputType = 1
+	OUTPUT_TEXT OutputType = 2
 )
 
 type TransformState c.Uint
 
 const (
-	XSLT_STATE_OK      TransformState = 0
-	XSLT_STATE_ERROR   TransformState = 1
-	XSLT_STATE_STOPPED TransformState = 2
+	STATE_OK      TransformState = 0
+	STATE_ERROR   TransformState = 1
+	STATE_STOPPED TransformState = 2
 )
 
 type X_TransformContext struct {

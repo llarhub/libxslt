@@ -12,40 +12,40 @@ import (
 type DebugTraceCodes c.Int
 
 const (
-	XSLT_TRACE_ALL             DebugTraceCodes = -1
-	XSLT_TRACE_NONE            DebugTraceCodes = 0
-	XSLT_TRACE_COPY_TEXT       DebugTraceCodes = 1
-	XSLT_TRACE_PROCESS_NODE    DebugTraceCodes = 2
-	XSLT_TRACE_APPLY_TEMPLATE  DebugTraceCodes = 4
-	XSLT_TRACE_COPY            DebugTraceCodes = 8
-	XSLT_TRACE_COMMENT         DebugTraceCodes = 16
-	XSLT_TRACE_PI              DebugTraceCodes = 32
-	XSLT_TRACE_COPY_OF         DebugTraceCodes = 64
-	XSLT_TRACE_VALUE_OF        DebugTraceCodes = 128
-	XSLT_TRACE_CALL_TEMPLATE   DebugTraceCodes = 256
-	XSLT_TRACE_APPLY_TEMPLATES DebugTraceCodes = 512
-	XSLT_TRACE_CHOOSE          DebugTraceCodes = 1024
-	XSLT_TRACE_IF              DebugTraceCodes = 2048
-	XSLT_TRACE_FOR_EACH        DebugTraceCodes = 4096
-	XSLT_TRACE_STRIP_SPACES    DebugTraceCodes = 8192
-	XSLT_TRACE_TEMPLATES       DebugTraceCodes = 16384
-	XSLT_TRACE_KEYS            DebugTraceCodes = 32768
-	XSLT_TRACE_VARIABLES       DebugTraceCodes = 65536
+	TRACE_ALL             DebugTraceCodes = -1
+	TRACE_NONE            DebugTraceCodes = 0
+	TRACE_COPY_TEXT       DebugTraceCodes = 1
+	TRACE_PROCESS_NODE    DebugTraceCodes = 2
+	TRACE_APPLY_TEMPLATE  DebugTraceCodes = 4
+	TRACE_COPY            DebugTraceCodes = 8
+	TRACE_COMMENT         DebugTraceCodes = 16
+	TRACE_PI              DebugTraceCodes = 32
+	TRACE_COPY_OF         DebugTraceCodes = 64
+	TRACE_VALUE_OF        DebugTraceCodes = 128
+	TRACE_CALL_TEMPLATE   DebugTraceCodes = 256
+	TRACE_APPLY_TEMPLATES DebugTraceCodes = 512
+	TRACE_CHOOSE          DebugTraceCodes = 1024
+	TRACE_IF              DebugTraceCodes = 2048
+	TRACE_FOR_EACH        DebugTraceCodes = 4096
+	TRACE_STRIP_SPACES    DebugTraceCodes = 8192
+	TRACE_TEMPLATES       DebugTraceCodes = 16384
+	TRACE_KEYS            DebugTraceCodes = 32768
+	TRACE_VARIABLES       DebugTraceCodes = 65536
 )
 
 type DebugStatusCodes c.Uint
 
 const (
-	XSLT_DEBUG_NONE        DebugStatusCodes = 0
-	XSLT_DEBUG_INIT        DebugStatusCodes = 1
-	XSLT_DEBUG_STEP        DebugStatusCodes = 2
-	XSLT_DEBUG_STEPOUT     DebugStatusCodes = 3
-	XSLT_DEBUG_NEXT        DebugStatusCodes = 4
-	XSLT_DEBUG_STOP        DebugStatusCodes = 5
-	XSLT_DEBUG_CONT        DebugStatusCodes = 6
-	XSLT_DEBUG_RUN         DebugStatusCodes = 7
-	XSLT_DEBUG_RUN_RESTART DebugStatusCodes = 8
-	XSLT_DEBUG_QUIT        DebugStatusCodes = 9
+	DEBUG_NONE        DebugStatusCodes = 0
+	DEBUG_INIT        DebugStatusCodes = 1
+	DEBUG_STEP        DebugStatusCodes = 2
+	DEBUG_STEPOUT     DebugStatusCodes = 3
+	DEBUG_NEXT        DebugStatusCodes = 4
+	DEBUG_STOP        DebugStatusCodes = 5
+	DEBUG_CONT        DebugStatusCodes = 6
+	DEBUG_RUN         DebugStatusCodes = 7
+	DEBUG_RUN_RESTART DebugStatusCodes = 8
+	DEBUG_QUIT        DebugStatusCodes = 9
 )
 
 // llgo:type C
