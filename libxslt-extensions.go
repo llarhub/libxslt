@@ -109,8 +109,8 @@ func (self StylesheetPtr) NewElemPreComp(inst libxml2.NodePtr, function Transfor
 	return nil
 }
 
-// llgo:link ElemPreCompPtr.InitElemPreComp C.xsltInitElemPreComp
-func (self ElemPreCompPtr) InitElemPreComp(style StylesheetPtr, inst libxml2.NodePtr, function TransformFunction, freeFunc ElemPreCompDeallocator) {
+// llgo:link ElemPreCompPtr.Init C.xsltInitElemPreComp
+func (self ElemPreCompPtr) Init(style StylesheetPtr, inst libxml2.NodePtr, function TransformFunction, freeFunc ElemPreCompDeallocator) {
 }
 
 //go:linkname RegisterExtModuleElement C.xsltRegisterExtModuleElement

@@ -44,29 +44,29 @@ type SecurityCheck = func(_llcppg_param1 SecurityPrefsPtr, _llcppg_param2 Transf
 //go:linkname NewSecurityPrefs C.xsltNewSecurityPrefs
 func NewSecurityPrefs() SecurityPrefsPtr
 
-// llgo:link SecurityPrefsPtr.FreeSecurityPrefs C.xsltFreeSecurityPrefs
-func (self SecurityPrefsPtr) FreeSecurityPrefs() {
+// llgo:link SecurityPrefsPtr.Free C.xsltFreeSecurityPrefs
+func (self SecurityPrefsPtr) Free() {
 }
 
-// llgo:link SecurityPrefsPtr.SetSecurityPrefs C.xsltSetSecurityPrefs
-func (self SecurityPrefsPtr) SetSecurityPrefs(option SecurityOption, func_ SecurityCheck) c.Int {
+// llgo:link SecurityPrefsPtr.Set C.xsltSetSecurityPrefs
+func (self SecurityPrefsPtr) Set(option SecurityOption, func_ SecurityCheck) c.Int {
 	return 0
 }
 
-// llgo:link SecurityPrefsPtr.SecurityPrefs C.xsltGetSecurityPrefs
-func (self SecurityPrefsPtr) SecurityPrefs(option SecurityOption) SecurityCheck {
+// llgo:link SecurityPrefsPtr.Get C.xsltGetSecurityPrefs
+func (self SecurityPrefsPtr) Get(option SecurityOption) SecurityCheck {
 	return nil
 }
 
-// llgo:link SecurityPrefsPtr.SetDefaultSecurityPrefs C.xsltSetDefaultSecurityPrefs
-func (self SecurityPrefsPtr) SetDefaultSecurityPrefs() {
+// llgo:link SecurityPrefsPtr.SetDefault C.xsltSetDefaultSecurityPrefs
+func (self SecurityPrefsPtr) SetDefault() {
 }
 
 //go:linkname GetDefaultSecurityPrefs C.xsltGetDefaultSecurityPrefs
 func GetDefaultSecurityPrefs() SecurityPrefsPtr
 
-// llgo:link SecurityPrefsPtr.SetCtxtSecurityPrefs C.xsltSetCtxtSecurityPrefs
-func (self SecurityPrefsPtr) SetCtxtSecurityPrefs(ctxt TransformContextPtr) c.Int {
+// llgo:link SecurityPrefsPtr.SetCtxt C.xsltSetCtxtSecurityPrefs
+func (self SecurityPrefsPtr) SetCtxt(ctxt TransformContextPtr) c.Int {
 	return 0
 }
 

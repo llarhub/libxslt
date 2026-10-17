@@ -160,5 +160,5 @@ func (self TransformContextPtr) LocalVariablePush(variable StackElemPtr, level c
 
 // Hook for the debugger if activated.
 //
-//go:linkname XslHandleDebugger C.xslHandleDebugger
-func XslHandleDebugger(cur libxml2.NodePtr, node libxml2.NodePtr, templ TemplatePtr, ctxt TransformContextPtr)
+//go:linkname HandleDebugger C.xslHandleDebugger
+func HandleDebugger(cur libxml2.NodePtr, node libxml2.NodePtr, templ TemplatePtr, ctxt TransformContextPtr)
