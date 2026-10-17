@@ -49,9 +49,9 @@ func TestTransformXML(t *testing.T) {
 		xsltDoc.Free()
 		t.Fatal("failed to parse XSLT stylesheet")
 	}
-	defer stylesheet.FreeStylesheet()
+	defer stylesheet.Free()
 
-	result := stylesheet.ApplyStylesheet(xmlDoc, nil)
+	result := stylesheet.Apply(xmlDoc, nil)
 	if result == nil {
 		t.Fatal("failed to apply XSLT stylesheet")
 	}

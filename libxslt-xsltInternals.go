@@ -474,8 +474,8 @@ func NewStylesheet() StylesheetPtr
 //go:linkname ParseStylesheetFile C.xsltParseStylesheetFile
 func ParseStylesheetFile(filename *libxml2.Char) StylesheetPtr
 
-// llgo:link StylesheetPtr.FreeStylesheet C.xsltFreeStylesheet
-func (self StylesheetPtr) FreeStylesheet() {
+// llgo:link StylesheetPtr.Free C.xsltFreeStylesheet
+func (self StylesheetPtr) Free() {
 }
 
 //go:linkname IsBlank C.xsltIsBlank

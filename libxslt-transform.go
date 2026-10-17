@@ -44,18 +44,18 @@ func (self TransformContextPtr) ProcessOneNode(node libxml2.NodePtr, params Stac
 func (self TransformContextPtr) ApplyStripSpaces(node libxml2.NodePtr) {
 }
 
-// llgo:link StylesheetPtr.ApplyStylesheet C.xsltApplyStylesheet
-func (self StylesheetPtr) ApplyStylesheet(doc libxml2.DocPtr, params **c.Char) libxml2.DocPtr {
+// llgo:link StylesheetPtr.Apply C.xsltApplyStylesheet
+func (self StylesheetPtr) Apply(doc libxml2.DocPtr, params **c.Char) libxml2.DocPtr {
 	return nil
 }
 
-// llgo:link StylesheetPtr.ProfileStylesheet C.xsltProfileStylesheet
-func (self StylesheetPtr) ProfileStylesheet(doc libxml2.DocPtr, params **c.Char, output *c.FILE) libxml2.DocPtr {
+// llgo:link StylesheetPtr.Profile C.xsltProfileStylesheet
+func (self StylesheetPtr) Profile(doc libxml2.DocPtr, params **c.Char, output *c.FILE) libxml2.DocPtr {
 	return nil
 }
 
-// llgo:link StylesheetPtr.RunStylesheet C.xsltRunStylesheet
-func (self StylesheetPtr) RunStylesheet(doc libxml2.DocPtr, params **c.Char, output *c.Char, SAX libxml2.SAXHandlerPtr, IObuf libxml2.OutputBufferPtr) c.Int {
+// llgo:link StylesheetPtr.Run C.xsltRunStylesheet
+func (self StylesheetPtr) Run(doc libxml2.DocPtr, params **c.Char, output *c.Char, SAX libxml2.SAXHandlerPtr, IObuf libxml2.OutputBufferPtr) c.Int {
 	return 0
 }
 
