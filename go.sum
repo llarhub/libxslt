@@ -8,3 +8,5 @@ github.com/llarhub/libxml2 v0.1.0 h1:hU5RDWjKb4IZlVvLt3VuPtmK/d41eN+hbEpKl/7Grmk
 github.com/llarhub/libxml2 v0.1.0/go.mod h1:vrTtofUlghtq9/ZjzJrSRX52aeliw7xQljAqB7HTDWc=
 github.com/llarhub/libxml2/c v0.1.0-pre.1 h1:2OWQMC2t/nbovtyhCZssFrGo8fbaWuRa3DgiSILwhig=
 github.com/llarhub/libxml2/c v0.1.0-pre.1/go.mod h1:5mT6qOwdxtiBCws++bDXSYnoOUtp4ux7jKd0vRGF/yQ=
+github.com/llarhub/libxml2/c v0.1.0 h1:Ql9QNVRW6BwoqtS9GpAGBo43bpVsCS1DzLfF7C+9lcI=
+github.com/llarhub/libxml2/c v0.1.0/go.mod h1:5mT6qOwdxtiBCws++bDXSYnoOUtp4ux7jKd0vRGF/yQ=
