@@ -28,7 +28,7 @@ type X_SecurityPrefs struct {
 //
 // structure to indicate the preferences for security in the XSLT
 // transformation.
-type SecurityPrefs = X_SecurityPrefs
+type SecurityPrefs X_SecurityPrefs
 type SecurityPrefsPtr = *SecurityPrefs
 
 // xsltSecurityCheck:

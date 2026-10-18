@@ -12,7 +12,7 @@ import (
 //
 // Data structure used for the implementation of patterns.
 // It is kept private (in pattern.c).
-type CompMatch = X_CompMatch
+type CompMatch X_CompMatch
 type CompMatchPtr = *CompMatch
 
 //go:linkname CompilePattern C.xsltCompilePattern
