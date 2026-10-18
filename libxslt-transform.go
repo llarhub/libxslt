@@ -27,8 +27,8 @@ func (self StylesheetPtr) NewTransformContext(doc libxml2.DocPtr) TransformConte
 func (self TransformContextPtr) Free() {
 }
 
-// llgo:link StylesheetPtr.ApplyStylesheetUser C.xsltApplyStylesheetUser
-func (self StylesheetPtr) ApplyStylesheetUser(doc libxml2.DocPtr, params **c.Char, output *c.Char, profile *c.FILE, userCtxt TransformContextPtr) libxml2.DocPtr {
+// llgo:link StylesheetPtr.ApplyUser C.xsltApplyStylesheetUser
+func (self StylesheetPtr) ApplyUser(doc libxml2.DocPtr, params **c.Char, output *c.Char, profile *c.FILE, userCtxt TransformContextPtr) libxml2.DocPtr {
 	return nil
 }
 
@@ -59,8 +59,8 @@ func (self StylesheetPtr) Run(doc libxml2.DocPtr, params **c.Char, output *c.Cha
 	return 0
 }
 
-// llgo:link StylesheetPtr.RunStylesheetUser C.xsltRunStylesheetUser
-func (self StylesheetPtr) RunStylesheetUser(doc libxml2.DocPtr, params **c.Char, output *c.Char, SAX libxml2.SAXHandlerPtr, IObuf libxml2.OutputBufferPtr, profile *c.FILE, userCtxt TransformContextPtr) c.Int {
+// llgo:link StylesheetPtr.RunUser C.xsltRunStylesheetUser
+func (self StylesheetPtr) RunUser(doc libxml2.DocPtr, params **c.Char, output *c.Char, SAX libxml2.SAXHandlerPtr, IObuf libxml2.OutputBufferPtr, profile *c.FILE, userCtxt TransformContextPtr) c.Int {
 	return 0
 }
 

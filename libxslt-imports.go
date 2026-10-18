@@ -9,13 +9,13 @@ import (
 
 // Module interfaces
 //
-// llgo:link StylesheetPtr.ParseStylesheetImport C.xsltParseStylesheetImport
-func (self StylesheetPtr) ParseStylesheetImport(cur libxml2.NodePtr) c.Int {
+// llgo:link StylesheetPtr.ParseImport C.xsltParseStylesheetImport
+func (self StylesheetPtr) ParseImport(cur libxml2.NodePtr) c.Int {
 	return 0
 }
 
-// llgo:link StylesheetPtr.ParseStylesheetInclude C.xsltParseStylesheetInclude
-func (self StylesheetPtr) ParseStylesheetInclude(cur libxml2.NodePtr) c.Int {
+// llgo:link StylesheetPtr.ParseInclude C.xsltParseStylesheetInclude
+func (self StylesheetPtr) ParseInclude(cur libxml2.NodePtr) c.Int {
 	return 0
 }
 

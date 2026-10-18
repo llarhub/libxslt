@@ -495,13 +495,13 @@ func (self StylesheetPtr) DecimalFormatGetByQName(nsUri *libxml2.Char, name *lib
 	return nil
 }
 
-// llgo:link StylesheetPtr.ParseStylesheetProcess C.xsltParseStylesheetProcess
-func (self StylesheetPtr) ParseStylesheetProcess(doc libxml2.DocPtr) StylesheetPtr {
+// llgo:link StylesheetPtr.ParseProcess C.xsltParseStylesheetProcess
+func (self StylesheetPtr) ParseProcess(doc libxml2.DocPtr) StylesheetPtr {
 	return self
 }
 
-// llgo:link StylesheetPtr.ParseStylesheetOutput C.xsltParseStylesheetOutput
-func (self StylesheetPtr) ParseStylesheetOutput(cur libxml2.NodePtr) {
+// llgo:link StylesheetPtr.ParseOutput C.xsltParseStylesheetOutput
+func (self StylesheetPtr) ParseOutput(cur libxml2.NodePtr) {
 }
 
 //go:linkname ParseStylesheetDoc C.xsltParseStylesheetDoc
@@ -510,8 +510,8 @@ func ParseStylesheetDoc(doc libxml2.DocPtr) StylesheetPtr
 //go:linkname ParseStylesheetImportedDoc C.xsltParseStylesheetImportedDoc
 func ParseStylesheetImportedDoc(doc libxml2.DocPtr, style StylesheetPtr) StylesheetPtr
 
-// llgo:link StylesheetPtr.ParseStylesheetUser C.xsltParseStylesheetUser
-func (self StylesheetPtr) ParseStylesheetUser(doc libxml2.DocPtr) c.Int {
+// llgo:link StylesheetPtr.ParseUser C.xsltParseStylesheetUser
+func (self StylesheetPtr) ParseUser(doc libxml2.DocPtr) c.Int {
 	return 0
 }
 

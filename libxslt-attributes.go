@@ -4,8 +4,8 @@ package libxslt
 
 import "github.com/llarhub/libxml2"
 
-// llgo:link StylesheetPtr.ParseStylesheetAttributeSet C.xsltParseStylesheetAttributeSet
-func (self StylesheetPtr) ParseStylesheetAttributeSet(cur libxml2.NodePtr) {
+// llgo:link StylesheetPtr.ParseAttributeSet C.xsltParseStylesheetAttributeSet
+func (self StylesheetPtr) ParseAttributeSet(cur libxml2.NodePtr) {
 }
 
 // llgo:link StylesheetPtr.FreeAttributeSetsHashes C.xsltFreeAttributeSetsHashes
@@ -16,6 +16,6 @@ func (self StylesheetPtr) FreeAttributeSetsHashes() {
 func (self TransformContextPtr) ApplyAttributeSet(node libxml2.NodePtr, inst libxml2.NodePtr, attributes *libxml2.Char) {
 }
 
-// llgo:link StylesheetPtr.ResolveStylesheetAttributeSet C.xsltResolveStylesheetAttributeSet
-func (self StylesheetPtr) ResolveStylesheetAttributeSet() {
+// llgo:link StylesheetPtr.ResolveAttributeSet C.xsltResolveStylesheetAttributeSet
+func (self StylesheetPtr) ResolveAttributeSet() {
 }
